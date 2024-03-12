@@ -10,6 +10,9 @@ export const TextContainer = styled.div`
   width: 30%;
   display: flex;
   align-items: center;
+  span {
+    color: #ecb365;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -34,6 +37,11 @@ export const ImageCover = styled.div`
 
 export const ActionContainer = styled.div`
   width: 30%;
+  display: flex;
+  align-items: center;
+  span {
+    color: #ecb365;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -42,5 +50,9 @@ export const H1 = styled.h1`
 `;
 
 export const H3 = styled.h3`
+  color: rgba(225, 225, 225, 0.9);
+`;
+
+export const P = styled.p`
   color: rgba(225, 225, 225, 0.9);
 `;
