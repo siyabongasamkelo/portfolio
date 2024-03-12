@@ -18,9 +18,15 @@ export const Links = styled.div`
     color: rgba(225, 225, 225, 0.9);
     padding-left: 35px;
   }
+  button {
+    display: none;
+  }
   @media only screen and (max-width: 600px) {
     a {
       display: none;
+    }
+    button {
+      display: block;
     }
   }
 `;
@@ -29,10 +35,14 @@ export const Action = styled.div`
   svg {
     fill: white;
     transform: scale(200%);
+    display: none;
   }
   @media only screen and (max-width: 600px) {
     button {
       display: none;
+    }
+    svg {
+      display: block;
     }
   }
 `;
