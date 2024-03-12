@@ -9,7 +9,7 @@ const Header = () => {
         <Link to={"/"}>Home</Link>
         <Link to={"/"}>Projects</Link>
         <Link to={"/"}>Contact</Link>
-        <MyButton>link</MyButton>
+        <MyButton>My Projects</MyButton>
       </Links>
       <Action>
         <MyButton>My Projects</MyButton>
