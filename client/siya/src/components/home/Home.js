@@ -9,6 +9,7 @@ import {
   H1,
   H3,
   P,
+  ButtonsCover,
 } from "./Home.styled";
 import Hero from "../img/Hero.png";
 import { MyButton } from "../header/Header.styled";
@@ -17,7 +18,7 @@ const Home = () => {
   return (
     <HomeWrapper>
       <Header />
-      {/* <HomeContainer>
+      <HomeContainer>
         <TextContainer>
           <div>
             <H3>I am</H3>
@@ -39,13 +40,13 @@ const Home = () => {
               in <span>javaScript</span>&nbsp;and is always working hard
               <span>everyday</span> to improve his skills
             </P>
-            <div>
+            <ButtonsCover>
               <MyButton>My Projects</MyButton>
               <MyButton>DownLoad Cv</MyButton>
-            </div>
+            </ButtonsCover>
           </div>
         </ActionContainer>
-      </HomeContainer> */}
+      </HomeContainer>
     </HomeWrapper>
   );
 };
