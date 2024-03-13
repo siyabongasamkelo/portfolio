@@ -3,7 +3,7 @@ body {
   font-family: "Kalam", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #180a0a !important;
+  background-color: rgb(20, 20, 20) !important;
 }
 
 * {
