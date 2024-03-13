@@ -28,25 +28,17 @@ const AboutMe = () => {
           </P>
           <ul>
             <li>Html </li>
-          </ul>
-          <ul>
             <li>Css</li>
           </ul>
           <P>i then pursued javascript in javascripti learned:</P>
           <ul>
+            <li>ES6</li>
             <li>Arrays</li>
-          </ul>
-          <ul>
             <li>Promises</li>
-          </ul>
-          <ul>
             <li>Callbacks</li>
-          </ul>
-          <ul>
             <li>Arrow functions</li>
-          </ul>
-          <ul>
             <li>async/await</li>
+            <li>Debugging and Troubleshooting</li>
           </ul>
         </AboutMEPara>
         <AboutMEPara>
@@ -58,9 +50,33 @@ const AboutMe = () => {
           </P>
           <ul>
             <li>Nodejs</li>
-          </ul>
-          <ul>
             <li>Npm</li>
+            <li>Express</li>
+            <li>Restful Api</li>
+            <li>Authetication & Authorization</li>
+            <li>Server Side coding</li>
+            <li>Authetication & Authorization</li>
+            <li>Data Security & Protection</li>
+            <li>Code Reusability</li>
+            <li>PayPal</li>
+          </ul>
+        </AboutMEPara>
+        <AboutMEPara>
+          <P>
+            After getting the hang of nodejs i then started to explore reactjs i
+            was hearing a lot about it and it really did live up to it
+            expactations :
+          </P>
+          <ul>
+            <li>ReactJs</li>
+            <li>Styled-Components</li>
+            <li>Bootstrap</li>
+            <li>Redux</li>
+            <li>FrontEnd Design</li>
+            <li>Git</li>
+            <li>React Query</li>
+            <li>Formik & Yup</li>
+            <li>PayPal</li>
           </ul>
         </AboutMEPara>
       </AboutMeText>
