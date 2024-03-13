@@ -113,6 +113,10 @@ export const H3 = styled.h3`
   color: rgba(225, 225, 225, 0.9);
 `;
 
+export const H4 = styled.h4`
+  color: rgba(225, 225, 225, 0.9);
+`;
+
 export const P = styled.p`
   color: rgba(225, 225, 225, 0.9);
 `;
