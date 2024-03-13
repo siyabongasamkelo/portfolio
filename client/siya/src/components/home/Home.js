@@ -37,8 +37,8 @@ const Home = () => {
           <div>
             <P>
               I am a very <span>passionate</span> web developer who specializes
-              in <span>javaScript</span>&nbsp;and is always working hard
-              <span>everyday</span> to improve his skills
+              in both <span>Front end & Back end</span>&nbsp;and is always
+              working hard &nbsp;<span>everyday</span> to improve his skills
             </P>
             <ButtonsCover>
               <MyButton>My Projects</MyButton>
