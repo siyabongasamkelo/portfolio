@@ -53,8 +53,6 @@ export const ImageCover = styled.div`
   height: 40vh;
   border-radius: 100px;
   margin-top: 5%;
-  /* img {
-  } */
   @media only screen and (min-width: 768px) {
     width: 50%;
     margin-left: 25%;
