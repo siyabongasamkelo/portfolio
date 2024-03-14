@@ -11,105 +11,53 @@ export const HomeContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  display: flex;
-  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
   span {
     color: #ecb365;
   }
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 10%;
-  text-align: center;
-  @media only screen and (min-width: 768px) {
-    width: 70%;
-    margin-left: 15%;
-  }
-  @media only screen and (min-width: 992px) {
-    width: 30%;
-    margin-left: 0;
-    text-align: left;
-  }
 `;
 
-export const ImageContainer = styled.div`
-  width: 100%;
-  @media only screen and (min-width: 992px) {
-    width: 40%;
-  }
-`;
-
-export const ImageCover = styled.div`
-  width: 70%;
-  margin-left: 15%;
+export const Circle = styled.div`
+  height: 180px;
+  aspect-ratio: 1 /1;
   background-color: #ecb365;
+  border-radius: 100px;
+  position: absolute;
+  top: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
   img {
-    object-fit: cover;
-    filter: brightness(85%);
-    height: 110%;
-  }
-  height: 40vh;
-  border-radius: 100px;
-  margin-top: 5%;
-  @media only screen and (min-width: 768px) {
-    width: 50%;
-    margin-left: 25%;
-  }
-  @media only screen and (min-width: 992px) {
-    width: 70%;
-    height: 70vh;
-    margin-left: 15%;
-    margin-top: 10%;
-    border-radius: 150px;
-    img {
-      height: 90%;
-    }
+    height: 90%;
   }
 `;
 
-export const ActionContainer = styled.div`
-  display: flex;
-  align-items: center;
-  span {
-    color: #ecb365;
-  }
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
-  text-align: center;
+export const ButtonContainer = styled.div`
+  margin-left: -30px;
   button {
-    width: 120px;
     margin-left: 30px;
   }
-  @media only screen and (min-width: 768px) {
-    width: 70%;
-    margin-left: 15%;
-  }
-  @media only screen and (min-width: 992px) {
-    width: 30%;
-    margin-left: 5%;
-  }
 `;
 
-export const ButtonsCover = styled.div`
-  margin-left: 5%;
-  display: flex;
+export const ParagraphContainer = styled.div`
+  width: 230px;
+  height: 200px;
+  text-align: left;
+  transform: rotate(10deg);
+  position: absolute;
+  left: 74%;
+  top: 70%;
 `;
 
 export const H1 = styled.h1`
   color: rgba(225, 225, 225, 0.9);
-  font-size: 74px;
-  @media only screen and (max-width: 600px) {
-    font-size: 42px;
-  }
-  @media only screen and (min-width: 768px) {
-    font-size: 74px;
-  }
+  font-size: 94px;
 `;
 
 export const H3 = styled.h3`
+  font-size: 42px;
   color: rgba(225, 225, 225, 0.9);
 `;
 
