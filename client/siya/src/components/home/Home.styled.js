@@ -28,7 +28,8 @@ export const TextContainer = styled.div`
 
 export const Circle = styled.div`
   aspect-ratio: 1 /1;
-  background-color: #e8751a;
+  background-color: #898121;
+  background-color: #113946;
   border-radius: 100px;
   position: absolute;
   display: flex;
@@ -67,6 +68,9 @@ export const ParagraphContainer = styled.div`
   height: 100px;
   top: 20%;
   margin-left: -35%;
+  p {
+    color: #fffdcb;
+  }
   @media only screen and (min-width: 768px) {
     left: 95%;
   }
@@ -86,6 +90,9 @@ export const H1 = styled.h1`
   }
   @media only screen and (min-width: 768px) {
     font-size: 52px;
+  }
+  @media only screen and (min-width: 992px) {
+    font-size: 94px;
   }
 `;
 
