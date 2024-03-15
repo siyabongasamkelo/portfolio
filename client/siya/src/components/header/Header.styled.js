@@ -53,5 +53,6 @@ export const MyButton = styled.button`
   border: none;
   border-radius: 30px;
   color: white;
-  background-color: #ecb365;
+  /* background-color: #ecb365; */
+  background-color: #e8751a;
 `;
