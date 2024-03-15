@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { H4 } from "../Home.styled";
 
 export const AboutMeWrapper = styled.section`
   margin-top: 40%;
@@ -39,26 +40,76 @@ export const AboutMEPara = styled.div`
 export const AboutCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const ParaContainer = styled.div`
   width: 80%;
   margin-left: 10%;
+  @media only screen and (max-width: 600px) {
+    text-align: left;
+  }
+  @media only screen and (min-width: 768px) {
+    text-align: left;
+  }
+`;
+
+export const ParaCover = styled.div`
+  width: 40%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 60%;
+    margin-left: 20%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 40%;
+    margin-left: 0;
+  }
+`;
+
+export const CardNumber = styled(H4)`
+  margin-top: 15%;
+  text-align: center;
+  color: #fffdcb;
+  color: #ffc47e;
+`;
+
+export const CardTitle = styled(H4)`
+  color: #fffdcb;
+  color: #ffc47e;
+  text-align: center;
+  margin-bottom: 5%;
 `;
 
 export const AboutCard = styled.div`
   height: 60vh;
   width: 23%;
   margin-top: 1%;
-  margin-left: 1%;
+  margin-left: 2%;
   border-radius: 20px;
-  background-color: #e8751a;
-  h4 {
-    margin-top: 5%;
-    font-weight: 600;
-    text-align: center;
-  }
+  background-color: #898121;
+  background-color: #4f4a45;
+  background-color: #113946;
+
   ul {
     color: rgba(225, 225, 225, 0.9);
+  }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 7%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 45%;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 23%;
+    margin-left: 2%;
   }
 `;
