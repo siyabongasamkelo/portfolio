@@ -1,5 +1,6 @@
 import AboutMe from "../components/home/AboutMe/AboutMe";
 import Home from "../components/home/Home";
+import MySkills from "../components/home/MySkills";
 import MyProjects from "../components/myprojects/MyProjects";
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Home />
       <AboutMe />
       <MyProjects />
+      <MySkills />
     </>
   );
 };
