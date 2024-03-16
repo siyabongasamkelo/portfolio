@@ -7,6 +7,7 @@ export const ProjectCover = styled.div`
   border-radius: 20px;
   background-color: #113946;
   display: flex;
+  margin-top: 5%;
 
   li {
     color: rgba(225, 225, 225, 0.9);
