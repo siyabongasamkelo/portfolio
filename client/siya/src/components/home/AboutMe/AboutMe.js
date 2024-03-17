@@ -1,8 +1,7 @@
-import { H1, H3, H4, P } from "../Home.styled";
+import { H1, P } from "../Home.styled";
 import {
   AboutCard,
   AboutCardContainer,
-  AboutMEPara,
   AboutMeText,
   AboutMeWrapper,
   CardNumber,
