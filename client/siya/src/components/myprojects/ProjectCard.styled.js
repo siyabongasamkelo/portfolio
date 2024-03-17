@@ -16,6 +16,14 @@ export const ProjectCover = styled.div`
     width: 100%;
     margin-left: -5%;
   }
+  @media only screen and (min-width: 768px) {
+    width: 46%;
+    margin-left: 3%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 90%;
+    margin-left: 0;
+  }
 `;
 
 export const ButtonCover = styled.div`
@@ -24,6 +32,16 @@ export const ButtonCover = styled.div`
   @media only screen and (max-width: 600px) {
     button {
       width: auto;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    button {
+      width: auto;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    button {
+      width: 160px;
     }
   }
 `;
@@ -39,6 +57,13 @@ export const ProjectData = styled.div`
   margin-top: 13%;
   @media only screen and (max-width: 600px) {
     display: none;
+  }
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+  @media only screen and (min-width: 992px) {
+    display: block;
+    text-align: left;
   }
 `;
 
@@ -56,5 +81,17 @@ export const ProjectImage = styled.div`
   }
   @media only screen and (max-width: 600px) {
     width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+    img {
+      height: 30vh;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    width: 65%;
+    img {
+      height: 40vh;
+    }
   }
 `;
