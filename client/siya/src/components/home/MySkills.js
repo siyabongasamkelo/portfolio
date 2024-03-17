@@ -1,4 +1,5 @@
-import { H1 } from "./Home.styled";
+import { ParaCover } from "./AboutMe/AboutMe.styled";
+import { H1, P } from "./Home.styled";
 import {
   MySkillCover,
   MySkillsWrapper,
@@ -10,6 +11,13 @@ const MySkills = () => {
   return (
     <MySkillsWrapper>
       <H1>My Skills</H1>
+      <ParaCover>
+        <P>
+          These are the languages and frameworks that i have worked with before
+          that i can definatley enjoy working with in the future, But im also a
+          quick learner and im willing to learn new skills
+        </P>
+      </ParaCover>
       <MySkillCover>
         <SkillCard>
           <Stack>Front End</Stack>
@@ -33,6 +41,7 @@ const MySkills = () => {
             <li>My Sql</li>
             <li>Visual basic</li>
             <li>C#</li>
+            <li>FireBase</li>
           </ul>
         </SkillCard>
         <SkillCard>
