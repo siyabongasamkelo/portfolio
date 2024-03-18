@@ -32,12 +32,22 @@ export const Links = styled.div`
 `;
 
 export const Action = styled.div`
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   svg {
-    fill: white;
+    fill: rgba(225, 225, 225, 0.9);
     transform: scale(200%);
     display: none;
   }
+  .alldevices {
+    display: block;
+  }
   @media only screen and (max-width: 600px) {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
     button {
       display: none;
     }
