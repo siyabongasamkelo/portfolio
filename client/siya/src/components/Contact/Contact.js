@@ -37,7 +37,7 @@ const Contact = () => {
             name="email"
             type="email"
           />
-          <Label for="message">Email</Label>
+          <Label for="message">Message</Label>
           <TextArea
             placeholder="type your message here"
             name="message"
