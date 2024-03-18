@@ -1,3 +1,4 @@
+import Contact from "../components/Contact/Contact";
 import AboutMe from "../components/home/AboutMe/AboutMe";
 import Home from "../components/home/Home";
 import MySkills from "../components/home/MySkills";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <AboutMe />
       <MyProjects />
       <MySkills />
+      <Contact />
     </>
   );
 };
