@@ -2,6 +2,24 @@ import styled from "styled-components";
 
 export const ContactWrapper = styled.section`
   margin-top: 15%;
+  @media only screen and (max-width: 600px) {
+    h1,
+    p {
+      text-align: center;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    h1,
+    p {
+      text-align: center;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    h1,
+    p {
+      text-align: left;
+    }
+  }
 `;
 
 export const ContactCover = styled.div``;
@@ -15,6 +33,17 @@ export const ContactForm = styled.form`
   background-color: #113946;
   button {
     margin-top: 5%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin-left: 5%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 47%;
+    margin-top: 5%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 30%;
   }
 `;
 
@@ -52,6 +81,16 @@ export const SocialMediaIcons = styled.div`
       fill: #e8751a;
     }
   }
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin-left: 5%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 47%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+  }
 `;
 
 export const ContactDetails = styled.div`
@@ -61,6 +100,16 @@ export const ContactDetails = styled.div`
   margin-top: 3%;
   border-radius: 10px;
   padding: 20px;
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+    margin-left: 5%;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 47%;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 30%;
+  }
 `;
 
 export const Stack = styled.div`
