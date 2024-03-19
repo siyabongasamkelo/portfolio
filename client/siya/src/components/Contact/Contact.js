@@ -21,28 +21,92 @@ import {
   Stack,
   TextArea,
 } from "./Contact.styled";
+import axios from "axios";
+import { useFormik } from "formik";
+import { MessageSchema } from "../../validation/MessageValidation";
+import { useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
+import { toast, ToastContainer } from "react-toastify";
+import Spinner from "react-bootstrap/Spinner";
+
+const showToastErrorMessage = (message) => {
+  toast.error(message);
+};
+
+const successToastMessage = (message) => {
+  toast.success(message);
+};
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const baseUrl = "http://localhost:5000";
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      message: "",
+    },
+    validationSchema: MessageSchema,
+    onSubmit: async () => {
+      setLoading(true);
+      try {
+        const { email } = formik.values;
+        const { message } = formik.values;
+
+        const sendMessage = await axios.post(`${baseUrl}/send-message`, {
+          email,
+          message,
+        });
+        console.log(sendMessage);
+        successToastMessage(sendMessage?.response?.data);
+        console.log(sendMessage);
+        setLoading(false);
+      } catch (err) {
+        console.log(err);
+        setLoading(false);
+        showToastErrorMessage("Something went wrong please try again later");
+      }
+    },
+  });
+
   return (
     <ContactWrapper>
+      <ToastContainer />
       <H1>Contact Me</H1>
       <ParaCover>
         <P>These are some way that can be used to contact me</P>
       </ParaCover>
       <ContactCover>
-        <ContactForm>
-          <Label for="email">Email</Label>
+        <ContactForm onSubmit={formik.handleSubmit}>
+          <Label htmlFor="email">Email</Label>
           <Input
             placeholder="enter email...exampe@gmail.com"
             name="email"
             type="email"
+            autoComplete="email"
+            value={formik.values.email}
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
           />
-          <Label for="message">Message</Label>
+          <Label htmlFor="message">Message</Label>
           <TextArea
             placeholder="type your message here"
             name="message"
+            autoComplete="message"
+            value={formik.values.message}
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
           ></TextArea>
-          <MyButton>Send Message</MyButton>
+          <MyButton type="submit" value="submit">
+            {loading ? (
+              <div className=" d-flex justify-content-center align-items-center">
+                <Spinner animation="border" role="status" />
+                <span style={{ marginLeft: "10px" }}>Sending message...</span>
+              </div>
+            ) : (
+              "Send Message"
+            )}
+          </MyButton>
         </ContactForm>
         <SocialMediaIcons>
           <Whatsapp />
