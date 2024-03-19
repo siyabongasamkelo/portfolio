@@ -1,4 +1,4 @@
-import { ParaContainer } from "../home/AboutMe/AboutMe.styled";
+// import { ParaContainer } from "../home/AboutMe/AboutMe.styled";
 import { H4, P } from "../home/Home.styled";
 import {
   ProjectCover,
@@ -6,6 +6,7 @@ import {
   ProjectData,
   GithubButton,
   ButtonCover,
+  ParaContainer,
 } from "./ProjectCard.styled";
 import { MyButton } from "../header/Header.styled";
 import { Globe, Github } from "react-bootstrap-icons";
