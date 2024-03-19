@@ -33,6 +33,7 @@ export const ButtonCover = styled.div`
     button {
       width: auto;
     }
+    margin-left: -8%;
   }
   @media only screen and (min-width: 768px) {
     button {
@@ -81,6 +82,10 @@ export const ProjectImage = styled.div`
   }
   @media only screen and (max-width: 600px) {
     width: 100%;
+    text-align: center;
+    p {
+      text-align: center;
+    }
   }
   @media only screen and (min-width: 768px) {
     width: 100%;
@@ -93,5 +98,18 @@ export const ProjectImage = styled.div`
     img {
       height: 40vh;
     }
+  }
+`;
+
+export const ParaContainer = styled.div`
+  width: 100%;
+  margin-left: 10%;
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 992px) {
+    text-align: left;
+    width: 55%;
   }
 `;
