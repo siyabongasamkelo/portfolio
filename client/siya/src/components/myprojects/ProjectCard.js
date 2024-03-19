@@ -1,4 +1,3 @@
-// import { ParaContainer } from "../home/AboutMe/AboutMe.styled";
 import { H4, P } from "../home/Home.styled";
 import {
   ProjectCover,
@@ -41,14 +40,14 @@ const ProjectCard = ({ details }) => {
       <ProjectData>
         <H4>Features</H4>
         <ul>
-          {details?.features?.map((feature) => {
-            return <li>{feature}</li>;
+          {details?.features?.map((feature, index) => {
+            return <li key={index}>{feature}</li>;
           })}
         </ul>
         <H4>Stack</H4>
         <ul>
-          {details?.stack?.map((stack) => {
-            return <li>{stack}</li>;
+          {details?.stack?.map((stack, index) => {
+            return <li key={index}>{stack}</li>;
           })}
         </ul>
       </ProjectData>
