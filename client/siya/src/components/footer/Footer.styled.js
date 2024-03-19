@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterWrapper = styled.footer`
   height: 30vh;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 20%;
 `;
 
 export const LetWorkTogether = styled.div`
