@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { P } from "../home/Home.styled";
 
 export const HeaderSliderStyled = styled.div`
   height: 100vh;
@@ -30,10 +31,16 @@ export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   a {
-    color: ${(props) => props.theme.light.primary};
+    color: ${({ theme }) => theme.dark.primary};
     text-align: center;
     text-decoration: none;
     font-size: 44px;
     font-weight: 800;
   }
+`;
+
+export const Copyrights = styled(P)`
+  color: ${({ theme }) => theme.dark.text};
+  text-align: center;
+  margin-top: 30%;
 `;
