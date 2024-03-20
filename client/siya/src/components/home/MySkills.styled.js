@@ -37,13 +37,13 @@ export const SkillCard = styled.div`
   width: 25%;
   height: 45vh;
   border-radius: 20px;
-  background-color: #113946;
+  background-color: ${({ theme }) => theme.dark.secondary};
   margin-left: 2%;
   ul {
     margin-top: 5%;
   }
   li {
-    color: rgba(225, 225, 225, 0.9);
+    color: ${({ theme }) => theme.dark.text};
     margin-left: 5%;
     text-align: left;
   }
