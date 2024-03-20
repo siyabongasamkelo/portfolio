@@ -11,11 +11,11 @@ import { Container } from "react-bootstrap";
 
 function App() {
   const theme = {
-    light: {
-      primary: "#ECB365",
-      secondary: " #fdf0d1",
-      tetiary: "#85586F",
-      text: "rgba(0,0,0,0.7)",
+    dark: {
+      primary: "#e8751a",
+      secondary: " #113946",
+      tetiary: "#fffdcb",
+      text: "rgba(225, 225, 225, 0.9);",
       smallText: "rgba(0, 0, 0, 0.8)",
     },
     size: {
@@ -31,7 +31,6 @@ function App() {
       <Route>
         <Route index element={<HomePage />} />
         <Route path="/" element={<HomePage />} />
-
         <Route path="/*" element={<HomePage />} />
       </Route>
     )
