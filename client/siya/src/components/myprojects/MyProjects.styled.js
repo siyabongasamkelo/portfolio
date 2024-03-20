@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const MyProjectWrapper = styled.section`
   margin-top: 10%;
+  a {
+    color: ${({ theme }) => theme.dark.primary};
+  }
   @media only screen and (max-width: 600px) {
     text-align: center;
   }
