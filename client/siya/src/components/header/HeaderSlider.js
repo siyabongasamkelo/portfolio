@@ -2,6 +2,7 @@ import {
   CloseButton,
   HeaderSliderStyled,
   LinksContainer,
+  Copyrights,
 } from "./HeaderSlider.styled";
 import { X } from "react-bootstrap-icons";
 import { motion } from "framer-motion";
@@ -23,15 +24,14 @@ const HeaderSlider = ({ closeMenu, setCloseMenu, display }) => {
       </CloseButton>
       <LinksContainer onClick={setCloseMenu}>
         <Link to={"/"}>Home</Link>
-        <Link to={"/shop"}>Shop</Link>
-        <Link to={"/Cart"}>Cart</Link>
+        <Link to={"/shop"}>About Me</Link>
+        <Link to={"/Cart"}>My Projects</Link>
         <Link to={"/login"}>Login</Link>
         <Link to={"/contact"}>Contact</Link>
       </LinksContainer>
-      {/* <Copyrights>
-        copyright&copy; {new Date().getFullYear()} All rights reserved siyabonga
-        Mazibuko
-      </Copyrights> */}
+      <Copyrights>
+        Siyabonga Mazibuko &copy; {new Date().getFullYear()}
+      </Copyrights>
     </HeaderSliderStyled>
   );
 };
