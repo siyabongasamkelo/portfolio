@@ -13,26 +13,62 @@ import {
 import Hero from "../img/Hero.png";
 import { MyButton, SecondaryButton } from "../header/Header.styled";
 import { HashLink as Link } from "react-router-hash-link";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Home = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      // When in view, animate the text sliding up
+    }
+  }, [inView]);
+
   return (
     <HomeWrapper>
       <Header />
-      <HomeContainer>
+      <HomeContainer ref={ref}>
         <Circle>
           <img src={Hero} alt="siya" />
         </Circle>
         <TextContainer>
           <ParagraphContainer>
-            <P>
+            <P
+              initial={{ y: 100 }}
+              animate={inView ? { y: 0 } : { y: 100 }}
+              transition={{ duration: 0.5 }}
+            >
               Hard working passionate 23 year old full stack developer who likes
               to do fun & creative projects & work with other developers
             </P>
           </ParagraphContainer>
-          <H3>I'm </H3>
-          <H1>Siyabonga Mazibuko</H1>
-          <H1>The Full Stack</H1>
-          <H1>
+          <H3
+            initial={{ y: 100 }}
+            animate={inView ? { y: 0 } : { y: 100 }}
+            transition={{ duration: 0.5 }}
+          >
+            I'm
+          </H3>
+          <H1
+            initial={{ y: 100 }}
+            animate={inView ? { y: 0 } : { y: 100 }}
+            transition={{ duration: 0.5 }}
+          >
+            Siyabonga Mazibuko
+          </H1>
+          <H1
+            initial={{ y: 100 }}
+            animate={inView ? { y: 0 } : { y: 100 }}
+            transition={{ duration: 0.5 }}
+          >
+            The Full Stack
+          </H1>
+          <H1
+            initial={{ y: 100 }}
+            animate={inView ? { y: 0 } : { y: 100 }}
+            transition={{ duration: 0.5 }}
+          >
             <span>Developer</span>
           </H1>
           <ButtonContainer>
