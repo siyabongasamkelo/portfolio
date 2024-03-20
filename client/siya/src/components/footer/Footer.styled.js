@@ -31,7 +31,7 @@ export const SocialMediaIcons = styled.div`
   justify-content: space-around;
   svg {
     transform: scale(1.5);
-    fill: rgba(225, 225, 225, 0.9);
+    fill: ${({ theme }) => theme.dark.text};
     cursor: pointer;
     transition: 0.5s ease-in-out;
     &:hover {
@@ -55,7 +55,7 @@ export const Thanks = styled.div`
 
 export const CopyRight = styled.div`
   text-align: center;
-  color: rgba(225, 225, 225, 0.9);
+  color: ${({ theme }) => theme.dark.text};
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin-left: 5%;
