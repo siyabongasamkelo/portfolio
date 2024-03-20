@@ -5,6 +5,15 @@ export const HomeWrapper = styled.section``;
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
+  h1,
+  h3,
+  h4 {
+    transition: 0.5s ease;
+    &:hover {
+      color: #e8751a;
+      background-color: ${({ theme }) => theme.dark.secondary};
+    }
+  }
   @media only screen and (min-width: 992px) {
     flex-direction: row;
   }
@@ -28,8 +37,7 @@ export const TextContainer = styled.div`
 
 export const Circle = styled.div`
   aspect-ratio: 1 /1;
-  background-color: #898121;
-  background-color: #113946;
+  background-color: ${({ theme }) => theme.dark.secondary};
   border-radius: 100px;
   position: absolute;
   display: flex;
@@ -65,25 +73,27 @@ export const ParagraphContainer = styled.div`
   transform: rotate(10deg);
   position: absolute;
   left: 74%;
-  height: 100px;
   top: 20%;
   margin-left: -35%;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transform: rotate(0deg);
+  }
   p {
-    color: #fffdcb;
+    color: ${({ theme }) => theme.dark.tetiary};
   }
   @media only screen and (min-width: 768px) {
     left: 95%;
   }
   @media only screen and (min-width: 992px) {
     margin-left: -35%;
-    height: 200px;
     left: 105%;
     top: 70%;
   }
 `;
 
 export const H1 = styled.h1`
-  color: rgba(225, 225, 225, 0.9);
+  color: ${({ theme }) => theme.dark.text};
   font-size: 94px;
   @media only screen and (max-width: 600px) {
     font-size: 52px;
@@ -98,16 +108,16 @@ export const H1 = styled.h1`
 
 export const H3 = styled.h3`
   font-size: 42px;
-  color: rgba(225, 225, 225, 0.9);
+  color: ${({ theme }) => theme.dark.text};
   @media only screen and (max-width: 600px) {
     font-size: 22px;
   }
 `;
 
 export const H4 = styled.h4`
-  color: rgba(225, 225, 225, 0.9);
+  color: ${({ theme }) => theme.dark.text};
 `;
 
 export const P = styled.p`
-  color: rgba(225, 225, 225, 0.9);
+  color: ${({ theme }) => theme.dark.text};
 `;
