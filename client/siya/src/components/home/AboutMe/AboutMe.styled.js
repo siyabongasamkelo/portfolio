@@ -16,7 +16,7 @@ export const AboutMEPara = styled.div`
   width: 90%;
   margin-left: 5%;
   li {
-    color: rgba(225, 225, 225, 0.9);
+    color: ${({ theme }) => theme.dark.text};
     text-align: left;
   }
   h3 {
@@ -74,30 +74,25 @@ export const ParaCover = styled.div`
 export const CardNumber = styled(H4)`
   margin-top: 15%;
   text-align: center;
-  color: #fffdcb;
-  color: #ffc47e;
+  color: ${({ theme }) => theme.dark.primary};
 `;
 
 export const CardTitle = styled(H4)`
-  color: #fffdcb;
-  color: #ffc47e;
+  color: ${({ theme }) => theme.dark.primary};
   text-align: center;
   margin-bottom: 5%;
 `;
 
 export const AboutCard = styled.div`
-  height: 60vh;
   width: 23%;
   margin-top: 1%;
   margin-left: 2%;
   border-radius: 20px;
-  background-color: #898121;
-  background-color: #4f4a45;
-  background-color: #113946;
-
+  background-color: ${({ theme }) => theme.dark.secondary};
   ul {
     color: rgba(225, 225, 225, 0.9);
   }
+
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin-left: 5%;
