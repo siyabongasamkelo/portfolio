@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MyButton } from "../header/Header.styled";
 
 export const ContactWrapper = styled.section`
   margin-top: 15%;
@@ -56,6 +57,10 @@ export const Label = styled.label`
   color: rgba(225, 225, 225, 0.9);
   padding-top: 5%;
   padding-bottom: 5%;
+`;
+
+export const ErrorLabel = styled(Label)`
+  color: red;
 `;
 
 export const TextArea = styled.textarea`
@@ -120,4 +125,8 @@ export const Stack = styled.div`
   svg {
     transform: scale(1.5);
   }
+`;
+
+export const SubmitButton = styled(MyButton)`
+  width: 100%;
 `;
