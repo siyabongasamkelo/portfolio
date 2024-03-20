@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const HomeWrapper = styled.section``;
 
@@ -92,7 +93,7 @@ export const ParagraphContainer = styled.div`
   }
 `;
 
-export const H1 = styled.h1`
+export const H1 = styled(motion.h1)`
   color: ${({ theme }) => theme.dark.text};
   font-size: 94px;
   @media only screen and (max-width: 600px) {
@@ -106,7 +107,7 @@ export const H1 = styled.h1`
   }
 `;
 
-export const H3 = styled.h3`
+export const H3 = styled(motion.h3)`
   font-size: 42px;
   color: ${({ theme }) => theme.dark.text};
   @media only screen and (max-width: 600px) {
@@ -114,10 +115,10 @@ export const H3 = styled.h3`
   }
 `;
 
-export const H4 = styled.h4`
+export const H4 = styled(motion.h4)`
   color: ${({ theme }) => theme.dark.text};
 `;
 
-export const P = styled.p`
+export const P = styled(motion.p)`
   color: ${({ theme }) => theme.dark.text};
 `;
