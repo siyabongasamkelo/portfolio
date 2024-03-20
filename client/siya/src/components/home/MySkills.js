@@ -9,13 +9,13 @@ import {
 
 const MySkills = () => {
   return (
-    <MySkillsWrapper>
+    <MySkillsWrapper id="skills">
       <H1>My Skills</H1>
       <ParaCover>
         <P>
           These are the languages and frameworks that i have worked with before
           that i can definatley enjoy working with in the future, But im also a
-          quick learner and im willing to learn new skills
+          quick learner and im more than willing to learn new skills
         </P>
       </ParaCover>
       <MySkillCover>
