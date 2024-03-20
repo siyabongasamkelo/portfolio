@@ -18,7 +18,8 @@ export const LetWorkTogether = styled.div`
       width: 65%;
     }
     button {
-      width: 25%;
+      /* width: 25%; */
+      width: auto;
     }
   }
 `;
