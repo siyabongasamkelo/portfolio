@@ -14,6 +14,7 @@ import {
   Twitter,
   Whatsapp,
 } from "react-bootstrap-icons";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -22,7 +23,9 @@ const Footer = () => {
         <div>
           <H4>Got a project in mind that you want us to work on ...?</H4>
         </div>
-        <MyButton>Let's Do It</MyButton>
+        <Link to={"#contacts"}>
+          <MyButton>Let's Do It</MyButton>
+        </Link>
       </LetWorkTogether>
       <SocialMediaIcons>
         <Facebook />
