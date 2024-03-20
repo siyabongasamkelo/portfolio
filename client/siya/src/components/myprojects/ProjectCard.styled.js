@@ -5,7 +5,7 @@ export const ProjectCover = styled.div`
   width: 90%;
   padding: 30px;
   border-radius: 20px;
-  background-color: #113946;
+  background-color: ${({ theme }) => theme.dark.secondary};
   display: flex;
   margin-top: 5%;
 
@@ -73,6 +73,9 @@ export const ProjectImage = styled.div`
   h4 {
     margin-top: 5%;
     color: #ffc47e;
+  }
+  a {
+    text-decoration: none;
   }
   img {
     height: 40vh;
