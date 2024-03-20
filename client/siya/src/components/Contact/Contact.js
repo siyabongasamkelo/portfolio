@@ -7,7 +7,6 @@ import {
   Twitter,
   Whatsapp,
 } from "react-bootstrap-icons";
-import { MyButton } from "../header/Header.styled";
 import { ParaCover } from "../home/AboutMe/AboutMe.styled";
 import { H1, P } from "../home/Home.styled";
 import {
@@ -15,10 +14,12 @@ import {
   ContactDetails,
   ContactForm,
   ContactWrapper,
+  ErrorLabel,
   Input,
   Label,
   SocialMediaIcons,
   Stack,
+  SubmitButton,
   TextArea,
 } from "./Contact.styled";
 import axios from "axios";
@@ -57,20 +58,20 @@ const Contact = () => {
           email,
           message,
         });
-        console.log(sendMessage);
-        successToastMessage(sendMessage?.response?.data);
-        console.log(sendMessage);
+
+        successToastMessage(sendMessage?.data);
         setLoading(false);
       } catch (err) {
         console.log(err);
         setLoading(false);
+        showToastErrorMessage(err?.data);
         showToastErrorMessage("Something went wrong please try again later");
       }
     },
   });
 
   return (
-    <ContactWrapper>
+    <ContactWrapper id="contacts">
       <ToastContainer />
       <H1>Contact Me</H1>
       <ParaCover>
@@ -88,6 +89,12 @@ const Contact = () => {
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
+          {formik.touched.email && formik.errors.email ? (
+            <ErrorLabel>{formik.errors.email}</ErrorLabel>
+          ) : (
+            ""
+          )}
+
           <Label htmlFor="message">Message</Label>
           <TextArea
             placeholder="type your message here"
@@ -97,7 +104,13 @@ const Contact = () => {
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           ></TextArea>
-          <MyButton type="submit" value="submit">
+          {formik.touched.message && formik.errors.message ? (
+            <ErrorLabel>{formik.errors.message}</ErrorLabel>
+          ) : (
+            ""
+          )}
+
+          <SubmitButton type="submit" value="submit">
             {loading ? (
               <div className=" d-flex justify-content-center align-items-center">
                 <Spinner animation="border" role="status" />
@@ -106,7 +119,7 @@ const Contact = () => {
             ) : (
               "Send Message"
             )}
-          </MyButton>
+          </SubmitButton>
         </ContactForm>
         <SocialMediaIcons>
           <Whatsapp />
