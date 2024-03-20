@@ -11,7 +11,8 @@ import {
   ParagraphContainer,
 } from "./Home.styled";
 import Hero from "../img/Hero.png";
-import { MyButton } from "../header/Header.styled";
+import { MyButton, SecondaryButton } from "../header/Header.styled";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -24,8 +25,8 @@ const Home = () => {
         <TextContainer>
           <ParagraphContainer>
             <P>
-              Smart working passionate 23 year old full stack developer who
-              likes to do fun & creative projects & work with other developers
+              Hard working passionate 23 year old full stack developer who likes
+              to do fun & creative projects & work with other developers
             </P>
           </ParagraphContainer>
           <H3>I'm </H3>
@@ -35,8 +36,10 @@ const Home = () => {
             <span>Developer</span>
           </H1>
           <ButtonContainer>
-            <MyButton>Download Resume</MyButton>
-            <MyButton>See Projects</MyButton>
+            <MyButton>Download CV</MyButton>
+            <Link to={"#projects"}>
+              <SecondaryButton>See Projects</SecondaryButton>
+            </Link>
           </ButtonContainer>
         </TextContainer>
       </HomeContainer>
