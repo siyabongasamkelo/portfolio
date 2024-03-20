@@ -12,15 +12,15 @@ import {
 
 const AboutMe = () => {
   return (
-    <AboutMeWrapper>
+    <AboutMeWrapper id="about">
       <AboutMeText>
         <H1>About Me</H1>
         <ParaCover>
           <P>
             I live and breath code, being a developer has always been my dream
             ever since i was a kid. I was always obsessed with computers and i
-            still can't believe that i'm to write instructions that a computer
-            can understand
+            still can't believe that i'm able to write instructions that a
+            computer can understand.
           </P>
         </ParaCover>
         <AboutCardContainer>
