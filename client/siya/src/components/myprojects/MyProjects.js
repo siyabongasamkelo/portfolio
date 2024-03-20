@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 const MyProjects = () => {
   const mygitHub = "https://github.com/siyabongasamkelo";
   return (
-    <MyProjectWrapper>
+    <MyProjectWrapper id="projects">
       <H1>My Projects</H1>
       <ParaCover>
         <P>
           These are a few of my best projects but if you're interested in seeing
-          more then please visit my
+          more then please visit my &nbsp;
           <Link to={mygitHub} target={`_blank`}>
-            git hub
+            github
           </Link>
         </P>
       </ParaCover>
