@@ -1,5 +1,5 @@
 import { HeaderWrapper, Logo, Links, MyButton, Action } from "./Header.styled";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import { Github, Instagram, List } from "react-bootstrap-icons";
 import { useState } from "react";
 import HeaderSlider from "./HeaderSlider";
@@ -10,15 +10,19 @@ const Header = () => {
 
   return (
     <HeaderWrapper>
-      <Logo>Siya</Logo>
+      <Logo>
+        <Link to="/">Siya</Link>
+      </Logo>
       <Links>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/"}>About</Link>
-        <Link to={"/"}>Projects</Link>
-        <Link to={"/"}>Contact</Link>
+        <Link to={"#about"}>Home</Link>
+        <Link to={"#projects"}>About</Link>
+        <Link to={"#skills"}>Projects</Link>
+        <Link to={"#contacts"}>Contact</Link>
       </Links>
       <Action>
-        <Github className="alldevices" />
+        <Link to={"https://github.com/siyabongasamkelo"} target={`_blank`}>
+          <Github className="alldevices" />
+        </Link>
         <Instagram className="alldevices" />
         <MyButton>My Projects</MyButton>
         <List
