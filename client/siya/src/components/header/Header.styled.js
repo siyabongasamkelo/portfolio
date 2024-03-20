@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const HeaderWrapper = styled.header`
   height: 10vh;
@@ -98,7 +99,7 @@ export const Action = styled.div`
   }
 `;
 
-export const MyButton = styled.button`
+export const MyButton = styled(motion.button)`
   height: 42px;
   width: 160px;
   border: none;
