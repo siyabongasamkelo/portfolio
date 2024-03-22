@@ -15,6 +15,8 @@ import { MyButton, SecondaryButton } from "../header/Header.styled";
 import { HashLink as Link } from "react-router-hash-link";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { saveAs } from "file-saver";
+import cv from "../home/mycv.pdf";
 
 const Home = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -24,6 +26,11 @@ const Home = () => {
       // When in view, animate the text sliding up
     }
   }, [inView]);
+
+  const downloadCv = () => {
+    console.log(cv);
+    saveAs(cv, "mycv.pdf"); // Download the photo file with the specified filename
+  };
 
   return (
     <HomeWrapper>
@@ -72,7 +79,7 @@ const Home = () => {
             <span>Developer</span>
           </H1>
           <ButtonContainer>
-            <MyButton>Download CV</MyButton>
+            <MyButton onClick={downloadCv}>Download CV</MyButton>
             <Link to={"#projects"}>
               <SecondaryButton>See Projects</SecondaryButton>
             </Link>
