@@ -1,6 +1,6 @@
 import { HeaderWrapper, Logo, Links, MyButton, Action } from "./Header.styled";
 import { HashLink as Link } from "react-router-hash-link";
-import { Github, Instagram, List } from "react-bootstrap-icons";
+import { Github, Linkedin, List } from "react-bootstrap-icons";
 import { useState } from "react";
 import HeaderSlider from "./HeaderSlider";
 
@@ -23,7 +23,12 @@ const Header = () => {
         <Link to={"https://github.com/siyabongasamkelo"} target={`_blank`}>
           <Github className="alldevices" />
         </Link>
-        <Instagram className="alldevices" />
+        <Link
+          to={"https://www.linkedin.com/in/siyabonga-samkelo-458587275/"}
+          target={`_blank`}
+        >
+          <Linkedin className="alldevices" />
+        </Link>
         <MyButton>My Projects</MyButton>
         <List
           onClick={() => {
