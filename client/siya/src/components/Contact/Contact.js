@@ -2,7 +2,7 @@ import {
   Envelope,
   Facebook,
   Github,
-  Instagram,
+  Linkedin,
   Telephone,
   Twitter,
   Whatsapp,
@@ -29,6 +29,7 @@ import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
+import { Link } from "react-router-dom";
 
 const showToastErrorMessage = (message) => {
   toast.error(message);
@@ -123,10 +124,22 @@ const Contact = () => {
         </ContactForm>
         <SocialMediaIcons>
           <Whatsapp />
-          <Facebook />
-          <Github />
+          <Link
+            to={"https://web.facebook.com/siyabonga.samkelo.92/"}
+            target={`_blank`}
+          >
+            <Facebook />
+          </Link>
+          <Link to={"https://github.com/siyabongasamkelo"} target={`_blank`}>
+            <Github />
+          </Link>
           <Twitter />
-          <Instagram />
+          <Link
+            to={"https://www.linkedin.com/in/siyabonga-samkelo-458587275/"}
+            target={`_blank`}
+          >
+            <Linkedin />
+          </Link>
         </SocialMediaIcons>
         <ContactDetails>
           <Stack>
