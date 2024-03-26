@@ -26,7 +26,7 @@ const AboutMe = () => {
         <AboutCardContainer>
           <AboutCard>
             <CardNumber>1</CardNumber>
-            <CardTitle>How i got into coding ?</CardTitle>
+            <CardTitle>How i started coding ?</CardTitle>
             <ParaContainer>
               <P>
                 My first language was visual basic back in 2019 when i was in
@@ -45,7 +45,7 @@ const AboutMe = () => {
 
           <AboutCard>
             <CardNumber>2</CardNumber>
-            <CardTitle>How i got into web development ?</CardTitle>
+            <CardTitle>How i started web Dev ?</CardTitle>
             <ParaContainer>
               <P>
                 Then fast forward to 2021 i started pursuing web development and
