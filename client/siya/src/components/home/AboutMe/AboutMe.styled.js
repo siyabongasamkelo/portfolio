@@ -97,7 +97,7 @@ export const AboutCard = styled.div`
     width: 90%;
     margin-left: 5%;
     margin-top: 7%;
-    height: 65vh;
+    /* height: 65vh; */
   }
   @media only screen and (min-width: 768px) {
     width: 45%;
