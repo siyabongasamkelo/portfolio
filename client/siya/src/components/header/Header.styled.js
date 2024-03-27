@@ -106,6 +106,9 @@ export const MyButton = styled(motion.button)`
   border-radius: 30px;
   color: white;
   background-color: ${({ theme }) => theme.dark.primary};
+  @media only screen and (max-width: 600px) {
+    width: 35%;
+  }
 `;
 
 export const SecondaryButton = styled(MyButton)`
