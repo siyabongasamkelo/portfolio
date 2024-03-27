@@ -50,6 +50,7 @@ export const SkillCard = styled.div`
   @media only screen and (max-width: 600px) {
     width: 95%;
     margin-top: 5%;
+    height: auto;
   }
   @media only screen and (min-width: 768px) {
     width: 45%;
