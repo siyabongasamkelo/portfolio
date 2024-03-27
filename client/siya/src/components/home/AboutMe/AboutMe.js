@@ -45,7 +45,7 @@ const AboutMe = () => {
 
           <AboutCard>
             <CardNumber>2</CardNumber>
-            <CardTitle>How i started web Dev ?</CardTitle>
+            <CardTitle>How i started Deb Dev ?</CardTitle>
             <ParaContainer>
               <P>
                 Then fast forward to 2021 i started pursuing web development and
