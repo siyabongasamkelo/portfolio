@@ -89,15 +89,20 @@ export const AboutCard = styled.div`
   margin-left: 2%;
   border-radius: 20px;
   background-color: ${({ theme }) => theme.dark.secondary};
+
   ul {
+    list-style: none;
     color: rgba(225, 225, 225, 0.9);
+  }
+
+  ul li:before {
+    content: "✓   ";
   }
 
   @media only screen and (max-width: 600px) {
     width: 90%;
     margin-left: 5%;
     margin-top: 7%;
-    /* height: 65vh; */
   }
   @media only screen and (min-width: 768px) {
     width: 45%;
