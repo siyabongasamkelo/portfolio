@@ -12,6 +12,15 @@ export const ProjectCover = styled.div`
   li {
     color: rgba(225, 225, 225, 0.9);
   }
+
+  ul {
+    list-style: none;
+    color: rgba(225, 225, 225, 0.9);
+  }
+
+  ul li:before {
+    content: "✓   ";
+  }
   @media only screen and (max-width: 600px) {
     width: 100%;
     margin-left: -5%;
