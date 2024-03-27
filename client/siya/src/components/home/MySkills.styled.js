@@ -47,6 +47,14 @@ export const SkillCard = styled.div`
     margin-left: 5%;
     text-align: left;
   }
+  ul {
+    list-style: none;
+    color: rgba(225, 225, 225, 0.9);
+  }
+
+  ul li:before {
+    content: "✓   ";
+  }
   @media only screen and (max-width: 600px) {
     width: 95%;
     margin-top: 5%;
